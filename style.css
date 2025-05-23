@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(ellipse at center, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.glow {
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff, 0 0 30px #00f7ff;
+}
+
+.typewriter {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #ccc;
+  border-right: 2px solid #ccc;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(30, end) forwards;
+}
+
+@keyframes typing {
+  to { width: 100%; }
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00f7ff33;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+/* Star background animation */
+.stars {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url('pexels-luis-gomes-546819-800x500.jpg') repeat;
+  z-index: -1;
+  animation: moveStars 100s linear infinite;
+}
+
+@keyframes moveStars {
+  0% { background-position: 0 0; }
+  100% { background-position: -10000px 5000px; }
+}
